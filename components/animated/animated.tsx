@@ -8,8 +8,8 @@ interface AnimatedProps {
 }
 
 const calc = (x: number, y: number, rect: DOMRect) => [
-    -(y - rect.top - rect.height / 3) / 5,
-    (x - rect.left - rect.width / 3) / 5,
+    -(y - rect.top - rect.height / 2) / 5,
+    (x - rect.left - rect.width / 2) / 5,
     1.1,
 ];
 

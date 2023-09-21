@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
 import { usePathname } from 'next/navigation';
-import Animated from '@/components/animated/animated';
+import { Animated } from '@/components/animated';
 
 interface NavigationMenuItemProps {
     link: string;
