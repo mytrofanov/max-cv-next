@@ -37,6 +37,7 @@ const Animated = (props: AnimatedProps) => {
             style={{ transform: springs.xys.to(trans) }}
             onMouseLeave={onMouseLeave}
             onMouseMove={onMouseMove}
+            className="flex items-center justify-center m-4"
         >
             {children}
         </animated.div>

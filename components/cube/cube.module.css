@@ -1,0 +1,91 @@
+.cube {
+    color: #222;
+    font-size: 2em;
+    line-height: 1;
+    display: block;
+
+}
+
+.cubeBody {
+    perspective: 1000px;
+    perspective-origin: center -5em;
+}
+
+.side,
+.cube_container {
+    width: 10em;
+    height: 10em;
+}
+
+.cube_container {
+    border: 5px;
+    transform-style: preserve-3d;
+    animation: rotate 30s infinite linear;
+}
+
+.cube_container:before,
+.cube_container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border: 2px;
+}
+
+.cube_container:before {
+    transform: rotateX(90deg);
+}
+
+.cube_container:after {
+    transform: rotatey(90deg);
+}
+
+.side {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border: 2px solid white;
+}
+
+.back {
+    transform: translateZ(-5em);
+    background: black url("img/MongoDB_Logo_sm.png") center no-repeat;
+    background-size: contain;
+}
+
+.left {
+    transform: translateX(-5em) rotateY(90deg);
+    background: black url("img/React_sm.png") center no-repeat;
+    background-size: contain;
+}
+
+.right {
+    transform: translateX(5em) rotateY(90deg);
+    background: black url("img/node_js_sm.png") center no-repeat;
+    background-size: contain;
+}
+
+.top {
+    transform: translateY(-5em) rotateX(90deg);
+    background: black url("img/Redux_sm.png") no-repeat center;
+    background-size: contain;
+}
+
+.bottom {
+    transform: translateY(5em) rotateX(90deg);
+    background: black url("img/TypeScript_sm.png") center no-repeat;
+    background-size: contain;
+}
+
+.front {
+    transform: translateZ(5em);
+    background: black url("img/next_sm.png") center no-repeat;
+    background-size: contain;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
