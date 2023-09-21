@@ -4,9 +4,15 @@
       "title": "Загальна Інформація"
     }
   },
+  "skills": {
+    "title": "Навички",
+    "aboutMe": {
+      "text": "Я працюю в стеці MERN (Mongo, Express, React, Node) також знаю Next.js та працюю з Мобільними додатками (React-Native, Expo). В більшості проектів використовую TypeScript. Робив chrome-extension, plugin для стороннього додатку а також гру Авіатор на React."
+    }
+  },
   "header": {
     "home": "Головна",
-    "register": "Реєстрація",
+    "skills": "Навички",
     "about": "Про нас",
     "account": "Акаунт",
     "owners": "Власники",

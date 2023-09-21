@@ -4,9 +4,15 @@
       "title": "General Information"
     }
   },
+  "skills": {
+    "title": "Skills",
+    "aboutMe": {
+      "text": "I am a MERN Developer(Mongo, Express, React, Node) and also work on Next.js and mobile projects (React-Native, Expo). Most of the projects use TypeScript. I also made chrome-extension, a plugin for third-party apps and Crush Game on React."
+    }
+  },
   "header": {
     "home": "Home",
-    "register": "Register",
+    "skills": "Skills",
     "about": "About",
     "account": "Account",
     "owners": "Owners",

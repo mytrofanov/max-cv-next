@@ -12,25 +12,20 @@ interface HeaderProps {
     lang: Locale;
     headerDictionary: HeaderDictionary;
     modeToggleDictionary: ModeToggleDictionary;
-    isAuth: boolean;
 }
 
 export const Header = (props: HeaderProps) => {
-    const { lang, headerDictionary, modeToggleDictionary, isAuth } = props;
+    const { lang, headerDictionary, modeToggleDictionary } = props;
 
     return (
         <div className="max-w-screen-lg flex items-center justify-center m-auto p-6 lg:px-8" aria-label="Global">
             <NavigationMenu>
                 <NavigationMenuList>
-                    {isAuth ? (
-                        <>
-                            <NavMenuItem link={pathNameWithLang('/', lang)} title={headerDictionary.home} />
-                            <NavMenuItem link={pathNameWithLang('/register', lang)} title={headerDictionary.register} />
-                            <NavMenuItem link={pathNameWithLang('/account', lang)} title={headerDictionary.account} />
-                            <NavMenuItem link={pathNameWithLang('/owners', lang)} title={headerDictionary.owners} />
-                            <NavMenuItem link={pathNameWithLang('/payments', lang)} title={headerDictionary.payments} />
-                        </>
-                    ) : null}
+                    <NavMenuItem link={pathNameWithLang('/', lang)} title={headerDictionary.home} />
+                    <NavMenuItem link={pathNameWithLang('/skills', lang)} title={headerDictionary.skills} />
+                    <NavMenuItem link={pathNameWithLang('/account', lang)} title={headerDictionary.account} />
+                    <NavMenuItem link={pathNameWithLang('/owners', lang)} title={headerDictionary.owners} />
+                    <NavMenuItem link={pathNameWithLang('/payments', lang)} title={headerDictionary.payments} />
                     <NavMenuItem link={pathNameWithLang('/about', lang)} title={headerDictionary.about} />
                 </NavigationMenuList>
             </NavigationMenu>

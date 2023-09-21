@@ -6,9 +6,16 @@ export interface AccountDictionary {
     accountSettings: AccountSettings;
 }
 
+export interface SkillsDictionary {
+    title: string;
+    aboutMe: {
+        text: string;
+    };
+}
+
 export interface HeaderDictionary {
     home: string;
-    register: string;
+    skills: string;
     about: string;
     account: string;
     owners: string;
@@ -40,26 +47,27 @@ export interface LoginFormDictionary {
 }
 
 export interface PaymentsTableDictionary {
-    date: string
-    organization: string
-    service: string
-    sum: string
+    date: string;
+    organization: string;
+    service: string;
+    sum: string;
 }
 
 export interface OwnersTableDictionary {
-    owner: string
-    type: string
-    address: string
-    email: string
+    owner: string;
+    type: string;
+    address: string;
+    email: string;
 }
 
 export interface Dictionary {
     account: AccountDictionary;
     header: HeaderDictionary;
+    skills: SkillsDictionary;
     modeToggle: ModeToggleDictionary;
     loginForm: LoginFormDictionary;
     tables: {
-        paymentTable: PaymentsTableDictionary,
-        owners: OwnersTableDictionary
-    }
+        paymentTable: PaymentsTableDictionary;
+        owners: OwnersTableDictionary;
+    };
 }
