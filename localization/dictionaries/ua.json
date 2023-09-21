@@ -1,0 +1,51 @@
+{
+  "account": {
+    "accountSettings": {
+      "title": "Загальна Інформація"
+    }
+  },
+  "header": {
+    "home": "Головна",
+    "register": "Реєстрація",
+    "about": "Про нас",
+    "account": "Акаунт",
+    "owners": "Власники",
+    "payments": "Платежі"
+  },
+  "loginForm": {
+    "validation": {
+      "email": "Невірна поштова адреса!",
+      "password": "Пароль має бути не менше ніж 6 символів"
+    },
+    "email": {
+      "label": "Поштова адреса",
+      "placeholder": "example@example.com",
+      "description": "введіть Вашу поштову адреса"
+    },
+    "password": {
+      "label": "Пароль",
+      "placeholder": "ваш пароль",
+      "description": "Введіть Ваш пароль"
+    },
+    "submit": "Увійти"
+  },
+  "modeToggle": {
+    "light": "Світла",
+    "dark": "Темна",
+    "system": "Системна"
+  },
+  "tables": {
+    "paymentTable": {
+      "date": "Дата",
+      "organization": "Організація",
+      "service": "Сервіс",
+      "sum": "Сума"
+    },
+    "owners": {
+      "owner": "Власник",
+      "type": "Тип",
+      "address": "Адреса",
+      "email": "Пошта"
+    }
+  }
+}

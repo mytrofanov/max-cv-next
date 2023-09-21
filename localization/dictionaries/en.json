@@ -1,0 +1,51 @@
+{
+  "account": {
+    "accountSettings": {
+      "title": "General Information"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "register": "Register",
+    "about": "About",
+    "account": "Account",
+    "owners": "Owners",
+    "payments": "Payments"
+  },
+  "loginForm": {
+    "validation": {
+      "email": "Email is not valid",
+      "password": "Password must be at least 6 characters"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "example@example.com",
+      "description": "Enter your email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "password",
+      "description": "Enter your password"
+    },
+    "submit": "Login"
+  },
+  "modeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "tables": {
+    "paymentTable": {
+      "date": "Date",
+      "organization": "Organization",
+      "service": "Service",
+      "sum": "Sum"
+    },
+    "owners": {
+      "owner": "Owner",
+      "type": "Type",
+      "address": "Address",
+      "email": "Email"
+    }
+  }
+}
