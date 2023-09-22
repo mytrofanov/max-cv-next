@@ -40,6 +40,9 @@
     "dark": "Темна",
     "system": "Системна"
   },
+  "sale": {
+    "title": "Компоненти на продаж:"
+  },
   "tables": {
     "paymentTable": {
       "date": "Дата",

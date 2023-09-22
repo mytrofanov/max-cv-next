@@ -1,12 +1,8 @@
-import { getOwnerInfo, getUserPaymentHistory } from '@/mock-data';
 import { Dictionary, LocaleType } from '@/localization';
-import { getDictionary } from '@/get-dictionary';
 import React from 'react';
-
-const ownerId = '728ed52f';
-
-const payments = getUserPaymentHistory(ownerId);
-const owner = getOwnerInfo(ownerId);
+import { forSale } from '@/lib';
+import SalesCard from '@/components/sales-card';
+import { getDictionary } from '@/get-dictionary';
 
 interface PaymentsPageProps {
     params: { lang: LocaleType };
@@ -14,12 +10,15 @@ interface PaymentsPageProps {
 
 export default async function SalePage(props: PaymentsPageProps) {
     const { params } = props;
-    if (!payments || !payments.length || !owner) return null;
     const dictionary: Dictionary = await getDictionary(params.lang);
-
     return (
         <div className="container mx-auto text-center">
-            <h2>Components for sale:</h2>
+            <h2 className="text-4xl font-extrabold text-center text-indigo-500 mb-6">{dictionary.sale.title}</h2>
+            <div className="flex flex-wrap justify-center">
+                {forSale.map(project => (
+                    <SalesCard key={project.name.en} project={project} lang={params.lang} />
+                ))}
+            </div>
         </div>
     );
 }

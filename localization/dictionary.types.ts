@@ -60,12 +60,17 @@ export interface OwnersTableDictionary {
     email: string;
 }
 
+export interface SaleDictionary {
+    title: string;
+}
+
 export interface Dictionary {
     account: AccountDictionary;
     header: HeaderDictionary;
     skills: SkillsDictionary;
     modeToggle: ModeToggleDictionary;
     loginForm: LoginFormDictionary;
+    sale: SaleDictionary;
     tables: {
         paymentTable: PaymentsTableDictionary;
         owners: OwnersTableDictionary;

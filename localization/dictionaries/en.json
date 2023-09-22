@@ -40,6 +40,9 @@
     "dark": "Dark",
     "system": "System"
   },
+  "sale": {
+    "title": "Components for Sale:"
+  },
   "tables": {
     "paymentTable": {
       "date": "Date",
