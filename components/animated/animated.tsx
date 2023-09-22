@@ -13,7 +13,11 @@ const calc = (x: number, y: number, rect: DOMRect) => [
     1.1,
 ];
 
-const trans = (x: any, y: any, s: any) => `perspective(300px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+const trans = (x: any, y: any, s: any) => {
+    const rotateX = x * 4; // Поіграємось зі значеннями тут
+    const rotateY = y * 4;
+    return `perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(${s})`;
+};
 
 const Animated = (props: AnimatedProps) => {
     const { children } = props;
