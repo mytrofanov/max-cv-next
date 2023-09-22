@@ -17,7 +17,7 @@ export interface HeaderDictionary {
     home: string;
     skills: string;
     about: string;
-    account: string;
+    portfolio: string;
     owners: string;
     sale: string;
 }
@@ -64,10 +64,16 @@ export interface SaleDictionary {
     title: string;
 }
 
+export interface PortfolioDictionary {
+    title: string;
+    description: string;
+}
+
 export interface Dictionary {
     account: AccountDictionary;
     header: HeaderDictionary;
     skills: SkillsDictionary;
+    portfolio: PortfolioDictionary;
     modeToggle: ModeToggleDictionary;
     loginForm: LoginFormDictionary;
     sale: SaleDictionary;

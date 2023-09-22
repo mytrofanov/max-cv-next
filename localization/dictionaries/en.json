@@ -14,7 +14,7 @@
     "home": "Home",
     "skills": "Skills",
     "about": "About",
-    "account": "Account",
+    "portfolio": "Portfolio",
     "owners": "Owners",
     "sale": "For sale"
   },
@@ -42,6 +42,10 @@
   },
   "sale": {
     "title": "Components for Sale:"
+  },
+  "portfolio": {
+    "title": "My projects:",
+    "description": "Here is information about my public projects, information about which I can provide without violating obligations to the client"
   },
   "tables": {
     "paymentTable": {

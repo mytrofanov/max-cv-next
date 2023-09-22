@@ -1,16 +1,6 @@
-export interface ForSaleProject {
-    name: {
-        en: string;
-        ua: string;
-    };
-    description: {
-        en: string;
-        ua: string;
-    };
-    video: { url: string; width: string; height: string; title: string; allow: string };
-}
+import { MyProject } from '@/lib/types';
 
-export const forSale: ForSaleProject[] = [
+export const forSale: MyProject[] = [
     {
         name: {
             en: 'Words detector in React - check the text for the presence of any words',
