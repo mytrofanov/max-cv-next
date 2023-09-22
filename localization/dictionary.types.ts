@@ -19,7 +19,7 @@ export interface HeaderDictionary {
     about: string;
     account: string;
     owners: string;
-    payments: string;
+    sale: string;
 }
 
 export interface ModeToggleDictionary {

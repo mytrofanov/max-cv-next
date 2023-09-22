@@ -9,7 +9,6 @@ import { LocaleType } from '@/localization/locale-types';
 import { i18n } from '@/i18n-config';
 import { Dictionary } from '@/localization';
 import { getDictionary } from '@/get-dictionary';
-import { db } from '@/mock-data';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,7 +29,6 @@ interface RootLayoutProps {
 const RootLayout = async (props: RootLayoutProps) => {
     const { children, params } = props;
     const dictionary: Dictionary = await getDictionary(params.lang);
-    const isAuth = db.isAuth;
 
     return (
         <html lang={params.lang} suppressHydrationWarning={true}>
@@ -42,7 +40,6 @@ const RootLayout = async (props: RootLayoutProps) => {
                                 headerDictionary={dictionary['header']}
                                 modeToggleDictionary={dictionary['modeToggle']}
                                 lang={params.lang}
-                                isAuth={isAuth}
                             />
                         ) : null}
                         {children}

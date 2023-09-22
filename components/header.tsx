@@ -25,7 +25,7 @@ export const Header = (props: HeaderProps) => {
                     <NavMenuItem link={pathNameWithLang('/skills', lang)} title={headerDictionary.skills} />
                     <NavMenuItem link={pathNameWithLang('/account', lang)} title={headerDictionary.account} />
                     <NavMenuItem link={pathNameWithLang('/owners', lang)} title={headerDictionary.owners} />
-                    <NavMenuItem link={pathNameWithLang('/payments', lang)} title={headerDictionary.payments} />
+                    <NavMenuItem link={pathNameWithLang('/sale', lang)} title={headerDictionary.sale} />
                     <NavMenuItem link={pathNameWithLang('/about', lang)} title={headerDictionary.about} />
                 </NavigationMenuList>
             </NavigationMenu>
