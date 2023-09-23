@@ -2,9 +2,11 @@
  * @jest-environment jsdom
  */
 import { render, screen } from '@testing-library/react';
-import Home from '../app/[lang]/page';
+jest.mock('server-only', () => require('../__mocks__/server-only'));
 
 describe('Home', () => {
+    const Home = require('../app/[lang]/page').default;
+
     it('renders a heading', () => {
         render(<Home />);
 
