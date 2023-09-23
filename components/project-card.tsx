@@ -1,6 +1,7 @@
 import React from 'react';
-import { MyProject } from '@/lib';
+import { MediaSize, MyProject } from '@/lib';
 import { LocaleType } from '@/localization';
+import Image from 'next/image';
 
 interface SalesCardProps {
     project: MyProject;
@@ -38,15 +39,24 @@ const ProjectCard = (props: SalesCardProps) => {
                 ) : null}
             </div>
             <div className="flex items-center justify-center h-60hv">
-                <iframe
-                    width={project.video.width}
-                    height={project.video.height}
-                    src={project.video.url}
-                    title={project.video.title}
-                    frameBorder="0"
-                    allow={project.video.allow}
-                    allowFullScreen
-                ></iframe>
+                {project.video ? (
+                    <iframe
+                        width={project.video.width}
+                        height={project.video.height}
+                        src={project.video.url}
+                        title={project.video.title}
+                        frameBorder="0"
+                        allow={project.video.allow}
+                        allowFullScreen
+                    ></iframe>
+                ) : (
+                    <Image
+                        src={project.image}
+                        alt={project.name[lang]}
+                        width={MediaSize.width}
+                        height={MediaSize.height}
+                    />
+                )}
             </div>
         </div>
     );

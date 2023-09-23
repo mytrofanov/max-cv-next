@@ -3,13 +3,18 @@ import landing from '../public/images/landing.jpg';
 import niceDevice from '../public/images/niceDevice.jpg';
 import currency from '../public/images/currency.jpg';
 
+export const MediaSize = {
+    width: 560,
+    height: 315,
+};
+
 export const MyWorks = [
     {
         image: '',
         name: { en: 'About me', ua: 'Про мене' },
         description: {
-            en: 'This web app was made using Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, prettier, etc.',
-            ua: 'Цей веб додаток був зроблений за допомогою наступних технологій Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, prettier, etc.',
+            en: 'This web app was made using Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, CI-CD, prettier, etc.',
+            ua: 'Цей веб додаток був зроблений за допомогою наступних технологій Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, CI-CD, prettier, etc.',
         },
         url: '',
         video: {
@@ -22,14 +27,17 @@ export const MyWorks = [
     },
     {
         image: currency,
-        name: { en: 'Currency Exchange', ua: 'Обмін валют' },
+        name: {
+            en: 'Currency Exchange with history and rate compare',
+            ua: 'Обмін валют з історією та порівнянням курсів',
+        },
         description: {
             en: 'This web app was made using React, TypeScript, Redux, Material UI, Git, axios, react-hooks, etc.',
             ua: 'Цей веб додаток був зроблений за допомогою наступних технологій React, TypeScript, Redux, Material UI, Git, axios, react-hooks, etc.',
         },
         url: 'https://mytrofanov.github.io/currency/',
         video: {
-            url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
+            url: 'https://www.youtube.com/embed/Ue3kocR_aP4?si=NM_HsGf3EwHSczEF',
             width: '560',
             height: '315',
             title: 'YouTube video player',
@@ -47,13 +55,7 @@ export const MyWorks = [
         },
         url: '',
         git: 'https://github.com/mytrofanov/online-store',
-        video: {
-            url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
-            width: '560',
-            height: '315',
-            title: 'YouTube video player',
-            allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
-        },
+        video: null,
     },
     {
         image: samurai,
@@ -88,5 +90,28 @@ export const MyWorks = [
             title: 'YouTube video player',
             allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
         },
+    },
+];
+export const MyProjects = [
+    {
+        title: 'full-stack project from scratch (MERN stack)',
+    },
+    {
+        title: 'app for Android and IOS on  Expo',
+    },
+    {
+        title: 'app for Android on React Native (Calculator for Truck-Drivers)',
+    },
+    {
+        title: 'app for Iphone on React Native using XCode for sharing data',
+    },
+    {
+        title: 'chrome extention for sharing data and files',
+    },
+    {
+        title: 'plugin for Zotero Connector',
+    },
+    {
+        title: 'crush game 2D - Aviator (on React)',
     },
 ];

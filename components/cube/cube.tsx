@@ -1,9 +1,13 @@
+'use client';
 import React from 'react';
 
 import styles from './cube.module.css';
 
 export const Cube = () => {
-    const [position, setPosition] = React.useState({ x: 0, y: 0 });
+    const [position, setPosition] = React.useState({
+        x: 1180,
+        y: 380,
+    });
     const [isDown, setIsDown] = React.useState(false);
     const [startPos, setStartPos] = React.useState({ x: 0, y: 0 });
 
@@ -14,8 +18,8 @@ export const Cube = () => {
         const viewportHeight = window.innerHeight;
 
         setPosition({
-            x: viewportWidth * 0.75,
-            y: viewportHeight - viewportHeight / 2,
+            x: viewportWidth * 0.6,
+            y: viewportHeight * 0.4,
         });
     }, []);
 

@@ -10,6 +10,7 @@ export const forSale: MyProject[] = [
             en: "There is a list of 100 words or more. It is a simple tool, built in React, that accepts an input of text (could be several pages long). Then once a user pastes the text into the input and presses a scan button, the tool will check the text for the presence of any of the words in my list and, if they're detected, highlight them.",
             ua: 'Є список зі 100 або більше слів. Це простий інструмент, вбудований в React, який приймає текст (може бути декілька сторінко). Після вставлення тексту та натискання кнопки scan, додаток перевіре наявність слів зі списку в тексті і якщо вони є, то будуть підсвічені кольором.',
         },
+        image: '',
         video: {
             url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
             width: '560',

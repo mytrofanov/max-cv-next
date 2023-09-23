@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 interface ProgressiveImageProps {
     preview: string;
@@ -8,27 +8,20 @@ interface ProgressiveImageProps {
 
 export const ProgressiveImage = (props: ProgressiveImageProps) => {
     const { preview, image, alt } = props;
-    const [currentImage, setCurrentImage] = React.useState(preview);
-    const [loading, setLoading] = React.useState(true);
-
-    React.useEffect(() => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => {
-            setCurrentImage(image);
-            setLoading(false);
-        };
-    }, [image]);
 
     return (
-        <img
+        <Image
             style={{
                 width: '100%',
                 height: 'auto',
-                filter: loading ? 'blur(20px)' : 'none',
                 transition: 'filter 0.3s ease-out',
             }}
-            src={currentImage}
+            width={800}
+            height={400}
+            sizes="(max-width: 768px) 100%"
+            src={image}
+            blurDataURL={preview}
+            placeholder="blur"
             alt={alt}
         />
     );

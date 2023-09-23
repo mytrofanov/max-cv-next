@@ -7,13 +7,19 @@
   "skills": {
     "title": "Skills",
     "aboutMe": {
-      "text": "I am a MERN Developer(Mongo, Express, React, Node) and also work on Next.js and mobile projects (React-Native, Expo). Most of the projects use TypeScript. I also made chrome-extension, a plugin for third-party apps and Crush Game on React."
+      "text": "Main stack: MERN (Mongo, Express, React, Node) and Next.js, React-Native, Expo with TypeScript. I also use in my work:"
+    }
+  },
+  "home": {
+    "title": "Hello, my name is Max - I'm a full-stack developer!",
+    "aboutMe": {
+      "text": "I am a MERN Developer(Mongo, Express, React, Node) and also work on Next.js and mobile projects (React-Native, Expo). Most of the projects use TypeScript."
     }
   },
   "header": {
     "home": "Home",
     "skills": "Skills",
-    "about": "About",
+    "about": "About Me",
     "portfolio": "Portfolio",
     "owners": "Owners",
     "sale": "For sale"
@@ -44,8 +50,8 @@
     "title": "Components for Sale:"
   },
   "portfolio": {
-    "title": "My projects:",
-    "description": "Here is information about my public projects, information about which I can provide without violating obligations to the client"
+    "title": "I made:",
+    "description": "Here are my public projects, information about which I can provide without violating obligations to the client:"
   },
   "tables": {
     "paymentTable": {

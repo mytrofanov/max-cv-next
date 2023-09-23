@@ -1,8 +1,8 @@
 import React from 'react';
-import ProgressBar from '@/components/progress-bar';
+import CustomSkeleton from '@/components/custom-skeleton';
 
 const Loading = () => {
-    return <ProgressBar />;
+    return <CustomSkeleton rowNumber={3} />;
 };
 
 export default Loading;

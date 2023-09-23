@@ -13,12 +13,18 @@ export interface SkillsDictionary {
     };
 }
 
+export interface HomeDictionary {
+    title: string;
+    aboutMe: {
+        text: string;
+    };
+}
+
 export interface HeaderDictionary {
     home: string;
     skills: string;
     about: string;
     portfolio: string;
-    owners: string;
     sale: string;
 }
 
@@ -81,4 +87,5 @@ export interface Dictionary {
         paymentTable: PaymentsTableDictionary;
         owners: OwnersTableDictionary;
     };
+    home: HomeDictionary;
 }

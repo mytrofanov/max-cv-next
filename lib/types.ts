@@ -1,3 +1,14 @@
+import { StaticImageData } from 'next/image';
+import React from 'react';
+
+interface Video {
+    url: string;
+    width: string;
+    height: string;
+    title: string;
+    allow: string;
+}
+
 export interface MyProject {
     name: {
         en: string;
@@ -9,5 +20,11 @@ export interface MyProject {
     };
     git?: string;
     url?: string;
-    video: { url: string; width: string; height: string; title: string; allow: string };
+    image: StaticImageData | string;
+    video: Video | null;
+}
+export interface AboutMeItem {
+    title: string;
+    url: string;
+    icon: React.ReactNode;
 }
