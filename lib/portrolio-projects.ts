@@ -45,7 +45,7 @@ export const MyWorks = [
                 'PostgreSQL,Sequelize, axios, react-hooks, etc.',
             ua: 'Пет-проект (Серверна частина та Фронт) був зроблений з використанням:  React, NodeJs, MobX, React Bootstrap, PostgreSQL,Sequelize, axios, react-hooks, etc.',
         },
-        url: 'http://nicedevice.top/',
+        url: '',
         git: 'https://github.com/mytrofanov/online-store',
         video: {
             url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
@@ -57,18 +57,16 @@ export const MyWorks = [
     },
     {
         image: samurai,
-        name: { en: 'The social-network website', ua: 'Соціальна мережа' },
+        name: { en: 'Pet project: The social-network website', ua: 'Пет-проект: Соціальна мережа' },
         description: {
-            en:
-                'This Social Network was build using: React, Redux, JavaScript, TypeScript, CSS, Ajax, API, ' +
-                'cookie, react-hook-form, Git',
+            en: 'This Social Network was build using: React, Redux, JavaScript, TypeScript, CSS, Ajax, API, cookie, react-hook-form, Git',
             ua:
                 'Ця соціальна мережа була побудована з використанням: React, Redux, JavaScript, TypeScript, CSS, Ajax, API, ' +
                 'cookie, react-hook-form, Git',
         },
         url: 'https://mytrofanov.github.io/second/#/profile',
         video: {
-            url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
+            url: 'https://www.youtube.com/embed/a8-rB8sUkss?si=kY6sobAPrA8jorhN',
             width: '560',
             height: '315',
             title: 'YouTube video player',
