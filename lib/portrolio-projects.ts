@@ -11,14 +11,17 @@ export const MediaSize = {
 export const MyWorks = [
     {
         image: '',
-        name: { en: 'About me', ua: 'Про мене' },
-        description: {
-            en: 'This web app was made using Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, CI-CD, prettier, etc.',
-            ua: 'Цей веб додаток був зроблений за допомогою наступних технологій Next, React, TypeScript, tailwindcss, next-intl, testing-library - jest, CI-CD, prettier, etc.',
+        name: {
+            en: 'This web app based on http://max.kyiv.ua',
+            ua: 'Цей додаток розміщенний на http://max.kyiv.ua/en',
         },
-        url: '',
+        description: {
+            en: 'This web app was made using Next, gitlab CI/CD, docker, React, TypeScript, tailwindcss, next-intl, testing-library - jest,  prettier, etc.',
+            ua: 'Цей веб додаток був зроблений за допомогою наступних технологій Next, gitlab CI/CD, docker,  React, TypeScript, tailwindcss, next-intl, testing-library - jest, prettier, etc.',
+        },
+        url: 'https://github.com/mytrofanov/max-cv-next',
         video: {
-            url: 'https://www.youtube.com/embed/M71irIrkbU4?si=dxzSozv3lZ73VYGh',
+            url: 'https://www.youtube.com/embed/aTNJvIuQLmE?si=yf6MhaI-FdQ0ta9d',
             width: '560',
             height: '315',
             title: 'YouTube video player',
